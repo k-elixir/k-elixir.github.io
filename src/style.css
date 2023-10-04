@@ -1,0 +1,415 @@
+:root {
+  --first-color: #ffffff;
+  --second-color: #cacee5;
+  --third-color: #822934;
+  --fourth-color: #0e111f;
+  --fifth-color: #17192c;
+  --default-font: "Prata", serif;
+  --paragraph-font: "Merienda", cursive;
+  --second-font: "Merriweather", serif;
+}
+body {
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  font-family: var(--default-font);
+}
+p,
+li {
+  font-family: var(--paragraph-font);
+}
+header i {
+  color: var(--second-color);
+}
+span,
+strong,
+.right a {
+  color: var(--third-color);
+  font-family: var(--second-font);
+}
+h1 {
+  color: var(--first-color);
+  font-size: 50px;
+}
+.home .center img {
+  position: relative;
+  top: -40px;
+  left: -80px;
+  box-shadow: 0px 2px 0px var(--third-color);
+}
+.home hr {
+  border: 2px solid var(--third-color);
+  width: 50px;
+}
+.home main h1 {
+  font-size: 70px;
+  margin-bottom: 70px;
+  text-decoration: underline var(--third-color);
+}
+.contact-button {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  font-family: var(--second-font);
+  font-size: 25px;
+  padding: 10px 30px;
+}
+.contact-button:hover {
+  color: var(--fourth-color);
+  background-color: var(--third-color);
+  transition: 0.3s ease-out;
+}
+.left h1,
+.first-main {
+  font-size: 100px;
+}
+.first-main {
+  background-color: var(--fifth-color);
+  text-align: center;
+  box-shadow: 0px 5px 20px 20px #00000056;
+}
+.first-main ul {
+  list-style: none;
+  padding: 0px;
+}
+.material-symbols-outlined {
+  position: relative;
+  top: 9px;
+  left: 10px;
+  color: inherit;
+}
+footer,
+.nav-button {
+  background-color: var(--fifth-color);
+}
+footer .open-source-link,
+.active,
+.about a {
+  color: var(--third-color);
+}
+footer a,
+.second-main h3 {
+  color: var(--first-color);
+}
+.project hr {
+  color: var(--third-color);
+  border: 3px solid var(--third-color);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.project h2 {
+  font-family: var(--second-font);
+}
+.project img,
+.second-main img {
+  border-radius: 5px;
+}
+.btn-contact-page {
+  background: linear-gradient(
+    320deg,
+    var(--fourth-color) 5%,
+    var(--third-color) 65%
+  );
+  color: var(--first-color);
+  width: 200px;
+  border: 0px;
+  font-size: 25px;
+}
+.btn-contact-page:hover {
+  background: linear-gradient(
+    320deg,
+    var(--third-color) 5%,
+    var(--fourth-color) 65%
+  );
+  color: var(--first-color);
+}
+
+@media (min-width: 500px) {
+  form {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .first-main i {
+    font-size: 80px;
+  }
+  .first-main h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 529px) {
+  .project img {
+    width: 200px;
+    position: relative;
+    top: -30px;
+  }
+  .project h1 {
+    font-size: 25px !important;
+  }
+  .project p,
+  .contact-button {
+    font-size: 15px !important;
+  }
+  .project .first-text {
+    display: none;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 679px) {
+  .project img {
+    width: 200px;
+    position: relative;
+    top: -227px;
+    right: -15px;
+  }
+  .project h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .project p,
+  .contact-button {
+    font-size: 20px !important;
+  }
+  .project .weather-img {
+    right: 15px;
+  }
+  .project .img-border {
+    border: 5px solid var(--third-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+  }
+  .project .first-text {
+    display: none;
+  }
+  .project .responsive-text {
+    margin-top: -170px;
+  }
+  .project footer {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 552px) {
+  header h1 {
+    font-size: 70px !important;
+  }
+  .home main h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 814px) {
+  .project img {
+    width: 250px;
+    position: relative;
+    top: -285px;
+    right: -20px;
+  }
+  .project h1 {
+    font-size: 35px;
+  }
+  .project p,
+  .contact-button {
+    font-size: 20px !important;
+  }
+  .project .weather-img {
+    right: 20px;
+  }
+  .project .img-border {
+    border: 5px solid var(--third-color);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+  }
+  .project .first-text .contact-button,
+  .project .responsive-text {
+    display: none;
+  }
+  .project hr {
+    margin-bottom: 50px;
+    margin-top: -200px;
+  }
+  .project footer {
+    margin-top: -100px;
+  }
+  .project #portfolio-project .extra-br {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .first-main {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .home .first-main h1 {
+    font-size: 50px;
+    margin-bottom: 0px !important;
+  }
+  .home .second-main h1 {
+    font-size: 50px;
+  }
+  .first-main i {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .second-main img {
+    margin-bottom: 60px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .left h1 {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .home .portfolio-project {
+    margin-top: -113px !important;
+  }
+  .home .first-weather {
+    margin-top: -113px !important;
+  }
+  .second-main img {
+    width: 300px;
+  }
+  .home .center img {
+    left: -20px !important;
+  }
+}
+
+@media (min-width: 815px) and (max-width: 989px) {
+  .project img {
+    width: 300px;
+    position: relative;
+    top: -340px;
+    right: -25px;
+  }
+  .project h1 {
+    font-size: 40px;
+  }
+  .project p {
+    font-size: 20px !important;
+  }
+  .project .weather-img {
+    right: 25px;
+  }
+  .project .img-border {
+    border: 5px solid var(--third-color);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+  }
+  .project hr {
+    color: var(--third-color);
+    border: 3px solid var(--third-color);
+    margin-top: -200px;
+    margin-bottom: 100px;
+  }
+  .responsive-text {
+    margin-top: -300px;
+    text-align: left;
+  }
+  .project footer {
+    margin-top: -100px;
+  }
+  .project .responsive-text,
+  .project .a-none {
+    display: none;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1199px) {
+  .project img {
+    width: 350px;
+    position: relative;
+    top: -400px;
+    right: -30px;
+  }
+  .project .img-border {
+    border: 7px solid var(--third-color);
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+  }
+  .project h1 {
+    font-size: 45px;
+  }
+  .project p {
+    font-size: 25px !important;
+  }
+  .project .weather-img {
+    right: 30px;
+  }
+  .project hr {
+    color: var(--third-color);
+    border: 3px solid var(--third-color);
+    margin-top: -300px;
+    margin-bottom: 100px;
+  }
+  .project footer {
+    margin-top: -230px;
+  }
+  .project .responsive-text,
+  .project .a-none {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .second-main img {
+    width: 350px;
+  }
+  .home .portfolio-project {
+    margin-top: -130px !important;
+  }
+  .home .first-weather {
+    margin-top: -130px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  form {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .home .first-main {
+    margin: 100px 200px !important;
+  }
+  .project img {
+    width: 400px;
+    position: relative;
+    top: -460px;
+    right: -40px;
+  }
+  .project .img-border {
+    border: 7px solid var(--third-color);
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+  }
+  .project .weather-img {
+    right: 40px;
+  }
+  .project hr {
+    color: var(--third-color);
+    border: 3px solid var(--third-color);
+    margin-top: -300px;
+    margin-bottom: 100px;
+  }
+  .project footer {
+    margin-top: -230px;
+  }
+  .project .responsive-text,
+  .project .a-none {
+    display: none;
+  }
+}
